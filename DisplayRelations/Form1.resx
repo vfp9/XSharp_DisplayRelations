@@ -117,7 +117,511 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="grpInstructions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 32</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1182, 65</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Navigate records in the main Customer table using the VCR buttons at the bottom of the form.  Click a record in the Orders table to see the items ordered in the lower grid. Blue items indicate dynamically calculated columns on the DataSet.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>grpInstructions</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpInstructions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="grpInstructions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1226, 100</value>
+  </data>
+  <data name="grpInstructions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpInstructions.Text" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="&gt;&gt;grpInstructions.Name" xml:space="preserve">
+    <value>grpInstructions</value>
+  </data>
+  <data name="&gt;&gt;grpInstructions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpInstructions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpInstructions.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="grpCustomer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 121</value>
+  </data>
+  <data name="txtTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>728, 28</value>
+  </data>
+  <data name="txtTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="txtTotal.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Name" xml:space="preserve">
+    <value>txtTotal</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;txtTotal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtContact.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 71</value>
+  </data>
+  <data name="txtContact.Size" type="System.Drawing.Size, System.Drawing">
+    <value>956, 28</value>
+  </data>
+  <data name="txtContact.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;txtContact.Name" xml:space="preserve">
+    <value>txtContact</value>
+  </data>
+  <data name="&gt;&gt;txtContact.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtContact.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;txtContact.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 22</value>
+  </data>
+  <data name="txtCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>638, 28</value>
+  </data>
+  <data name="txtCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtCompany.Name" xml:space="preserve">
+    <value>txtCompany</value>
+  </data>
+  <data name="&gt;&gt;txtCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCompany.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;txtCompany.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtCustID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="txtCustID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 28</value>
+  </data>
+  <data name="txtCustID.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtCustID.Name" xml:space="preserve">
+    <value>txtCustID</value>
+  </data>
+  <data name="&gt;&gt;txtCustID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCustID.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;txtCustID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblCompany.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 28</value>
+  </data>
+  <data name="lblCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 18</value>
+  </data>
+  <data name="lblCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblCompany.Text" xml:space="preserve">
+    <value>Com&amp;pany</value>
+  </data>
+  <data name="&gt;&gt;lblCompany.Name" xml:space="preserve">
+    <value>lblCompany</value>
+  </data>
+  <data name="&gt;&gt;lblCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCompany.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;lblCompany.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 127</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 18</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Grand Total (all orders)</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblContact.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblContact.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 78</value>
+  </data>
+  <data name="lblContact.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 18</value>
+  </data>
+  <data name="lblContact.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblContact.Text" xml:space="preserve">
+    <value>Con&amp;tact</value>
+  </data>
+  <data name="&gt;&gt;lblContact.Name" xml:space="preserve">
+    <value>lblContact</value>
+  </data>
+  <data name="&gt;&gt;lblContact.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblContact.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;lblContact.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblCustID.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCustID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 29</value>
+  </data>
+  <data name="lblCustID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 18</value>
+  </data>
+  <data name="lblCustID.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCustID.Text" xml:space="preserve">
+    <value>Customer &amp;ID</value>
+  </data>
+  <data name="&gt;&gt;lblCustID.Name" xml:space="preserve">
+    <value>lblCustID</value>
+  </data>
+  <data name="&gt;&gt;lblCustID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCustID.Parent" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;lblCustID.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grpCustomer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="grpCustomer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 131</value>
+  </data>
+  <data name="grpCustomer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1228, 158</value>
+  </data>
+  <data name="grpCustomer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpCustomer.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="&gt;&gt;grpCustomer.Name" xml:space="preserve">
+    <value>grpCustomer</value>
+  </data>
+  <data name="&gt;&gt;grpCustomer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpCustomer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpCustomer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="grdOrders.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="grdOrders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 304</value>
+  </data>
+  <data name="grdOrders.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="grdOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1222, 247</value>
+  </data>
+  <data name="grdOrders.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;grdOrders.Name" xml:space="preserve">
+    <value>grdOrders</value>
+  </data>
+  <data name="&gt;&gt;grdOrders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grdOrders.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grdOrders.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="grdDetails.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="grdDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 557</value>
+  </data>
+  <data name="grdDetails.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="grdDetails.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1222, 178</value>
+  </data>
+  <data name="grdDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;grdDetails.Name" xml:space="preserve">
+    <value>grdDetails</value>
+  </data>
+  <data name="&gt;&gt;grdDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grdDetails.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grdDetails.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cmdFirst.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdFirst.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="cmdFirst.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 746</value>
+  </data>
+  <data name="cmdFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 38</value>
+  </data>
+  <data name="cmdFirst.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cmdFirst.Text" xml:space="preserve">
+    <value>|&lt;</value>
+  </data>
+  <data name="&gt;&gt;cmdFirst.Name" xml:space="preserve">
+    <value>cmdFirst</value>
+  </data>
+  <data name="&gt;&gt;cmdFirst.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdFirst.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdFirst.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmdPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdPrevious.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="cmdPrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 746</value>
+  </data>
+  <data name="cmdPrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 38</value>
+  </data>
+  <data name="cmdPrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cmdPrevious.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;cmdPrevious.Name" xml:space="preserve">
+    <value>cmdPrevious</value>
+  </data>
+  <data name="&gt;&gt;cmdPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdPrevious.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdPrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmdNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdNext.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="cmdNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 746</value>
+  </data>
+  <data name="cmdNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 38</value>
+  </data>
+  <data name="cmdNext.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cmdNext.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;cmdNext.Name" xml:space="preserve">
+    <value>cmdNext</value>
+  </data>
+  <data name="&gt;&gt;cmdNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdNext.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdNext.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmdLast.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="cmdLast.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="cmdLast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 746</value>
+  </data>
+  <data name="cmdLast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 38</value>
+  </data>
+  <data name="cmdLast.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cmdLast.Text" xml:space="preserve">
+    <value>&gt;|</value>
+  </data>
+  <data name="&gt;&gt;cmdLast.Name" xml:space="preserve">
+    <value>cmdLast</value>
+  </data>
+  <data name="&gt;&gt;cmdLast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdLast.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdLast.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmdClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cmdClose.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="cmdClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1102, 745</value>
+  </data>
+  <data name="cmdClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 38</value>
+  </data>
+  <data name="cmdClose.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="cmdClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;cmdClose.Name" xml:space="preserve">
+    <value>cmdClose</value>
+  </data>
+  <data name="&gt;&gt;cmdClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmdClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmdClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1276, 791</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 18</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Display Child Relations and Calculated Columns</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
