@@ -21,20 +21,20 @@ Begin Namespace DisplayRelations
                    
         Procedure CreateConnect()
             Local lcODBCDrive As String, lcServer As String, lcPort As String, lcUID As String, lcPWD As String, lcDatabase As String
-            Local loParser As FileIniDataParser, data As IniData, section As KeyDataCollection
+            Local loParser As FileIniDataParser, loData As IniData, loSection As KeyDataCollection
             Local lcConnectionStrings As String
             
             loParser    = FileIniDataParser{}
-            data        = loParser.ReadFile("Config.INI")
+            loData      = loParser.ReadFile("Config.INI")
             
-            section = data["ODBC"]
+            loSection = loData["ODBC"]
             
-            lcODBCDrive = section["ODBCDriver"]
-            lcServer    = section["Server"]
-            lcPort      = section["Port"]
-            lcDatabase  = section["Database"]
-            lcUID       = section["UID"]
-            lcPWD       = section["PWD"]
+            lcODBCDrive = loSection["ODBCDriver"]
+            lcServer    = loSection["Server"]
+            lcPort      = loSection["Port"]
+            lcDatabase  = loSection["Database"]
+            lcUID       = loSection["UID"]
+            lcPWD       = loSection["PWD"]
             
             Text To lcConnectionStrings Noshow Textmerge Pretext 1 + 2 + 4 + 8
                 Driver={<<lcODBCDrive>>};UID=<<lcUID>>;PWD=<<lcPWD>>;Server=<<lcServer>>,<<lcPort>>;Database=<<lcDatabase>>
