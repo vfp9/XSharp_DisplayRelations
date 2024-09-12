@@ -11,3 +11,4 @@ This repository is an attempt to rewrite one of the [.NET Samples for Visual Fox
 1. [VS IDE 2022 Community](https://visualstudio.microsoft.com/vs/)
 2. [X#](https://xsharp.eu/) Ver:2.20.0.3
 3. .NET Framework 4.8
+4. SQL Server 2008 R2
