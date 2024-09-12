@@ -105,11 +105,11 @@
     <None Include="Config.INI">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Notthwind.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="data\Notthwind.mdf">
+      <Link>Notthwind.mdf</Link>
     </None>
-    <None Include="Notthwind_1.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="data\Notthwind_1.ldf">
+      <Link>Notthwind_1.ldf</Link>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
