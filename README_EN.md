@@ -1,5 +1,5 @@
 # XSharp_DisplayRelations
-[简体中文](README.md)|[English](README_En.md)
+[简体中文](README.md)|[English](README_EN.md)
 
 ## Instructions
 20 years ago, MS released [.NET Samples for Visual FoxPro Developers](https://www.microsoft.com/en-eg/download/details.aspx?id=17602&msockid=0bcd37265329654913db23835207643f). it was written in the VB.NET language.
