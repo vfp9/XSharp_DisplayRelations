@@ -423,6 +423,9 @@
   <data name="&gt;&gt;grdOrders.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="bsOrders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="grdDetails.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
@@ -600,6 +603,12 @@
   <data name="&gt;&gt;cmdClose.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="bsOrderDetails.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>219, 17</value>
+  </metadata>
+  <metadata name="bsCustomers.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>414, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -617,6 +626,24 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Display Child Relations and Calculated Columns</value>
+  </data>
+  <data name="&gt;&gt;bsOrders.Name" xml:space="preserve">
+    <value>bsOrders</value>
+  </data>
+  <data name="&gt;&gt;bsOrders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bsOrderDetails.Name" xml:space="preserve">
+    <value>bsOrderDetails</value>
+  </data>
+  <data name="&gt;&gt;bsOrderDetails.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bsCustomers.Name" xml:space="preserve">
+    <value>bsCustomers</value>
+  </data>
+  <data name="&gt;&gt;bsCustomers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

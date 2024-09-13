@@ -83,11 +83,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Customers2.prg" />
     <Compile Include="DAL_OrderDetails.prg" />
+    <Compile Include="DAL_OrderDetails2.prg" />
     <Compile Include="DAL_Orders.prg" />
+    <Compile Include="DAL_Orders2.prg" />
     <Compile Include="myBLL.prg" />
     <Compile Include="myConnect.prg" />
     <Compile Include="DAL_Customers.prg" />
+    <Compile Include="myBLL2.prg" />
     <Compile Include="Program.prg">
       <SubType>Code</SubType>
     </Compile>
