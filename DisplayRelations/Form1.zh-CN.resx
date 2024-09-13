@@ -142,7 +142,7 @@
     <value>客户ID(&amp;I)</value>
   </data>
   <data name="lblContact.Text" xml:space="preserve">
-    <value>联系方式(&amp;t)</value>
+    <value>联系人(&amp;t)</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>合计(所有订单)</value>
