@@ -1,11 +1,4 @@
-﻿// myBLL.prg
-// Created by    : niuji
-// Creation Date : 2024/9/11 15:54:02
-// Created for   : 
-// WorkStation   : LENOVE-T14
-
-
-USING System
+﻿Using System
 USING System.Collections.Generic
 Using System.Text
 
@@ -17,6 +10,21 @@ BEGIN NAMESPACE DisplayRelations
     /// The myBLL class.
     /// </summary>
     Define Class myBLL As DataEnvironment
-
-	ENDDEFINE
+        Customers       = .null.
+        Orders          = .null.
+        OrderDetails    = .null.
+                   
+        Constructor(tnStatementHandle)
+            With This
+                .Name           = "myDE"
+                .DataSourceType = "ODBC"
+                .DataSource     = tnStatementHandle
+                .Customers      = CreateObject("DAL_Customers",     tnStatementHandle)
+                .Orders         = CreateObject("DAL_Orders",        tnStatementHandle)
+                .OrderDetails   = CreateObject("DAL_OrderDetails",  tnStatementHandle)
+            Endwith
+            Return
+        End Constructor    
+        
+	Enddefine
 END NAMESPACE // DisplayRelations
