@@ -25,63 +25,6 @@ Begin Namespace DisplayRelations
         
         Public _oDE        As DataEnvironment
         
-        Private Method BindControl
-            Select Orders
-            Var loDS = DbDataSource()
-        End Method
-
-        Public Property oConnect As myConnect 
-            Get 
-                Return _oConnect 
-            End Get
-            Set 
-                _oConnect := Value 
-            End Set
-        End Property
-
-        Public Property oDE As DataEnvironment 
-            Get 
-                Return _oDE 
-            End Get
-            Set 
-                _oDE := Value 
-            End Set
-        End Property
-
-
-        
-        Public Constructor()   Strict
-            InitializeComponent()
-            This.CreatConnect()
-            
-            *!* Option 1, abandon for now
-            *!* This.oDE = CreateObject("myBLL", This.oConnect.nStatementHandle)
-            
-            *!* Option 2           
-            Set Date Ansi
-            This.oDE = CreateObject("myBLL2", This.oConnect.nStatementHandle)
-            This.BindControls()
-            
-            Return
-        End Constructor
-
-        Private Method cmdClose_Click(sender As System.Object, e As System.EventArgs) As Void Strict
-            This.Close()
-            Return
-        End Method
-
-        Private Method  CreatConnect() As Void Strict
-            With This
-                .oConnect = CreateObject("myConnect")
-            Endwith
-            
-            Return
-        End Method
-        
-        Private Method Form1_Load(sender As System.Object, e As System.EventArgs) As Void Strict               
-            Return
-        End Method
-        
         Private Method BindControls() As Void Strict
             Select Customers
             With This
@@ -117,7 +60,59 @@ Begin Namespace DisplayRelations
                 Endwith
                 
                 .bsOrderDetails.DataSource    = loDS
+                
+                Local lnSum As Currency 
+                Sum UnitPrice * Quantity * (1 - Discount) To lnSum
+                //lnSum = round(lnSum, 2)
+                This.txtTotal.Text = lnSum.ToString()
             Endwith
+        End Method
+               
+        Public Property oConnect As myConnect 
+            Get 
+                Return _oConnect 
+            End Get
+            Set 
+                _oConnect := Value 
+            End Set
+        End Property
+
+        Public Property oDE As DataEnvironment 
+            Get 
+                Return _oDE 
+            End Get
+            Set 
+                _oDE := Value 
+            End Set
+        End Property
+
+        
+        Public Constructor()   Strict
+            InitializeComponent()
+            This.CreatConnect()
+            
+            *!* Option 1, abandon for now
+            *!* This.oDE = CreateObject("myBLL", This.oConnect.nStatementHandle)
+            
+            *!* Option 2           
+            Set Date Ansi
+            This.oDE = CreateObject("myBLL2", This.oConnect.nStatementHandle)
+            This.BindControls()
+            
+            Return
+        End Constructor
+        
+        Private Method cmdClose_Click(sender As System.Object, e As System.EventArgs) As Void Strict
+            This.Close()
+            Return
+        End Method
+
+        Private Method  CreatConnect() As Void Strict
+            With This
+                .oConnect = CreateObject("myConnect")
+            Endwith
+            
+            Return
         End Method
     End Class 
 End Namespace
