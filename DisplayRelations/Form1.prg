@@ -23,7 +23,6 @@ Begin Namespace DisplayRelations
         Inherit System.Windows.Forms.Form
 
         Public _oConnect   As myConnect
-        
         Public _oDE        As myBLL2
         
         Private Method BindControls() As Void Strict
@@ -52,6 +51,36 @@ Begin Namespace DisplayRelations
             
             Return
         End Method
+        
+        Private Method BindingOrders()
+            Select Orders
+            With This
+                .grdOrders.DataSource   = .bsOrders
+                
+                Var loDS = DbDataSource()
+                With loDS
+                    .ShowDeleted    = .f.
+                    .ShowRecno      = .f.
+                Endwith
+                
+                .bsOrders.DataSource    = loDS
+            Endwith    
+        End Method
+        
+        Private Method BindingOrderDetails
+            Select OrderDetails
+            With This
+                .grdDetails.DataSource   = .bsOrderDetails
+                
+                Var loDS = DbDataSource()
+                With loDS
+                    .ShowDeleted    = .f.
+                    .ShowRecno      = .f.
+                Endwith
+                
+                .bsOrderDetails.DataSource    = loDS
+            Endwith
+        End Method
                
         Public Property oConnect As myConnect 
             Get 
@@ -70,7 +99,8 @@ Begin Namespace DisplayRelations
                 _oDE := Value 
             End Set
         End Property
-      
+
+    
         Public Constructor()   Strict
             InitializeComponent()
             This.CreatConnect()
@@ -81,10 +111,11 @@ Begin Namespace DisplayRelations
             *!* Option 2           
             This.oDE = CreateObject("myBLL2", This.oConnect.nStatementHandle)
             This.BindControls()
+            This.grdDetailsSetStyle()
             
             Return
         End Constructor
-        
+               
         Private Method cmdClose_Click(sender As System.Object, e As System.EventArgs) As Void Strict
             This.Close()
             Return
@@ -154,33 +185,20 @@ Begin Namespace DisplayRelations
             This.bsOrderDetails.ResetBindings(.f.)            
         End Method
         
-        Private Method BindingOrders()
-            Select Orders
-            With This
-                .grdOrders.DataSource   = .bsOrders
-                
-                Var loDS = DbDataSource()
-                With loDS
-                    .ShowDeleted    = .f.
-                    .ShowRecno      = .f.
-                Endwith
-                
-                .bsOrders.DataSource    = loDS
-            Endwith    
+        Private Method grdOrders_SelectionChanged(sender As System.Object, e As System.EventArgs) As Void Strict
+            If !Empty(This.txtCompany.Text)
+                This.OrderDetails_Refresh()
+                This.GrandTotal()
+            Endif
+            
+            Return
         End Method
         
-        Private Method BindingOrderDetails
-            Select OrderDetails
-            With This
-                .grdDetails.DataSource   = .bsOrderDetails
-                
-                Var loDS = DbDataSource()
-                With loDS
-                    .ShowDeleted    = .f.
-                    .ShowRecno      = .f.
-                Endwith
-                
-                .bsOrderDetails.DataSource    = loDS
+        Private Method grdDetailsSetStyle()
+            With This.grdDetails
+                .Columns[2].DefaultCellStyle.BackColor = color.Blue
+                .Columns[3].DefaultCellStyle.BackColor = color.Blue
+                .Columns[4].DefaultCellStyle.BackColor = color.Blue
             Endwith
         End Method
     End Class 

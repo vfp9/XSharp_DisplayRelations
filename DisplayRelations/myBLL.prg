@@ -10,9 +10,9 @@ BEGIN NAMESPACE DisplayRelations
     /// The myBLL class.
     /// </summary>
     Define Class myBLL As DataEnvironment
-        Customers       = .null.
-        Orders          = .null.
-        OrderDetails    = .null.
+        Customers       As DAL_Customers2
+        Orders          As DAL_Orders2
+        OrderDetails    As DAL_OrderDetails2
                    
         Constructor(tnStatementHandle)
             With This

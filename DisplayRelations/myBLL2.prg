@@ -8,7 +8,6 @@ Begin Namespace DisplayRelations
 
 	/// <summary>
     /// The myBLL2 class.
-    /// Using the Custom Emulation DataEnvironment
     /// </summary>
     Define Class myBLL2 As DataEnvironment    
         Customers       As DAL_Customers2

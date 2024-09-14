@@ -21,6 +21,7 @@
     <Undeclared>True</Undeclared>
     <Fox2>True</Fox2>
     <Fox1>False</Fox1>
+    <AZ>False</AZ>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
