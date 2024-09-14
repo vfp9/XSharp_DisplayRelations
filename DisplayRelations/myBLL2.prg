@@ -10,10 +10,10 @@ Begin Namespace DisplayRelations
     /// The myBLL2 class.
     /// Using the Custom Emulation DataEnvironment
     /// </summary>
-    Define Class myBLL2 As DataEnvironment
-        Customers       = .null.
-        Orders          = .null.
-        OrderDetails    = .null.
+    Define Class myBLL2 As DataEnvironment    
+        Customers       As DAL_Customers2
+        Orders          As DAL_Orders2
+        OrderDetails    As DAL_OrderDetails2
 
         Constructor(tnStatementHandle)
             With This
