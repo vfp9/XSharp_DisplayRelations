@@ -13,19 +13,19 @@ Begin Namespace DisplayRelations
     /// The myConnect class.
     /// </summary>
     Define Class myConnect As Custom
-        nStatementHandle As INT
+        nStatementHandle As Int
         nStatementHandle    =  0
         
-        Constructor()
+        Procedure Init()
             CreateConnect()
             Return
-        End Constructor
+        Endproc
         
         Procedure CreateConnect()
             Local lcODBCDrive As String, lcServer As String, lcPort As String, lcUID As String, lcPWD As String, lcDatabase As String
             Local loParser As FileIniDataParser, loData As IniData, loSection As KeyDataCollection
             Local lcConnectionStrings As String
-            
+                   
             loParser    = FileIniDataParser{}
             loData      = loParser.ReadFile("Config.INI")
             

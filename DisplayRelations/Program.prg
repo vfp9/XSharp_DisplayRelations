@@ -1,16 +1,17 @@
-﻿USING System
-USING System.Collections.Generic
-USING System.Linq
-USING System.Text
-USING System.Windows.Forms
+﻿Using System
+Using System.Collections.Generic
+Using System.Linq
+Using System.Text
+Using System.Windows.Forms
 
-USING DisplayRelations
+Using DisplayRelations
 
 [STAThread] ;
-FUNCTION Start() AS VOID
-
-Application.EnableVisualStyles()
-Application.SetCompatibleTextRenderingDefault( FALSE )
-Application.Run( Form1{} )
-
-RETURN
+Function Start() As Void
+    
+    Application.EnableVisualStyles()
+    Application.SetCompatibleTextRenderingDefault( False )
+    Application.Run( Form1{} )
+    
+    Return
+    

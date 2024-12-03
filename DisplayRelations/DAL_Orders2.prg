@@ -16,7 +16,8 @@ BEGIN NAMESPACE DisplayRelations
         DataSource      = -1
         SelectCmd       = ""
         
-        Constructor(tnStatementHandle)
+        *!* Define Class 语法定义的类中不能使用构造函数，但是可以使用传统的 Init 完成创建类实例时的初始化    by xinjie  2024.12.03
+        Procedure Init(tnStatementHandle)
             With This
                 .Name           = "Orders"
                 .Alias          = "Orders"
@@ -27,7 +28,7 @@ BEGIN NAMESPACE DisplayRelations
             Endwith
 
             Return
-        End Constructor
+        Endproc
         
         Procedure DefineSelect()  As String
             Local lcPara As String, lcSelect As String

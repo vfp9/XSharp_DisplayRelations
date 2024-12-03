@@ -22,12 +22,16 @@
     <Fox2>True</Fox2>
     <Fox1>False</Fox1>
     <AZ>False</AZ>
+    <Vo15>true</Vo15>
+    <Vo9>true</Vo9>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DisabledWarnings>XS0219,XS9092,XS9073</DisabledWarnings>
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
@@ -51,29 +55,29 @@
       <Name>XSharp.Core</Name>
       <SpecificVersion>False</SpecificVersion>
       <AssemblyName>XSharp.Core.dll</AssemblyName>
-      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.Core.dll</HintPath>
       <Private>True</Private>
+      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="XSharp.Data">
       <Name>XSharp.Data</Name>
       <SpecificVersion>False</SpecificVersion>
       <AssemblyName>XSharp.Data.dll</AssemblyName>
-      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.Data.dll</HintPath>
       <Private>True</Private>
+      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.Data.dll</HintPath>
     </Reference>
     <Reference Include="XSharp.RT">
       <Name>XSharp.RT</Name>
       <SpecificVersion>False</SpecificVersion>
       <AssemblyName>XSharp.RT.dll</AssemblyName>
-      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.RT.dll</HintPath>
       <Private>True</Private>
+      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.RT.dll</HintPath>
     </Reference>
     <Reference Include="XSharp.VFP">
       <Name>XSharp.VFP</Name>
       <SpecificVersion>False</SpecificVersion>
       <AssemblyName>XSharp.VFP.dll</AssemblyName>
-      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.VFP.dll</HintPath>
       <Private>True</Private>
+      <HintPath>D:\Program Files (x86)\XSharp\XSharp\Assemblies\XSharp.VFP.dll</HintPath>
     </Reference>
     <Reference Include="XSharp.VFP.UI, Version=2.6.0.0, Culture=neutral, PublicKeyToken=ed555a0467764586">
       <Name>XSharp.VFP.UI</Name>
@@ -85,13 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_Customers2.prg" />
-    <Compile Include="DAL_OrderDetails.prg" />
     <Compile Include="DAL_OrderDetails2.prg" />
-    <Compile Include="DAL_Orders.prg" />
     <Compile Include="DAL_Orders2.prg" />
-    <Compile Include="myBLL.prg" />
     <Compile Include="myConnect.prg" />
-    <Compile Include="DAL_Customers.prg" />
     <Compile Include="myBLL2.prg" />
     <Compile Include="Program.prg">
       <SubType>Code</SubType>
@@ -114,11 +114,9 @@
     </None>
     <None Include="data\Notthwind.mdf">
       <Link>Notthwind.mdf</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="data\Notthwind_1.ldf">
       <Link>Notthwind_1.ldf</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

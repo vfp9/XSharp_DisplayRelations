@@ -11,6 +11,6 @@
 
 ## 开发环境：
 1. [VS IDE 2022 社区版](https://visualstudio.microsoft.com/zh-hans/vs/)
-2. [X#](https://xsharp.eu/) Ver:2.20.0.3
+2. [X#](https://xsharp.eu/) Ver:2.21.0.5
 3. .NET Framework 4.8
 4. SQL Server 2008 R2

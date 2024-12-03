@@ -21,7 +21,7 @@ Begin Namespace DisplayRelations
 
     Public Partial Class Form1 ;
         Inherit System.Windows.Forms.Form
-
+    
         Public _oConnect   As myConnect
         Public _oDE        As myBLL2
         
@@ -65,6 +65,8 @@ Begin Namespace DisplayRelations
                 
                 .bsOrders.DataSource    = loDS
             Endwith    
+            
+            Return
         End Method
         
         Private Method BindingOrderDetails
@@ -80,6 +82,8 @@ Begin Namespace DisplayRelations
                 
                 .bsOrderDetails.DataSource    = loDS
             Endwith
+            
+            Return
         End Method
                
         Public Property oConnect As myConnect 
@@ -162,6 +166,8 @@ Begin Namespace DisplayRelations
             This.Orders_Refresh()
             This.OrderDetails_Refresh()
             This.GrandTotal()
+            
+            Return
         End Method
         
         Private Method Orders_Refresh
@@ -172,7 +178,8 @@ Begin Namespace DisplayRelations
                 
             This.BindingOrders()
             This.bsOrders.ResetBindings(.f.)
-
+            
+            Return
         End Method
         
         Private Method OrderDetails_Refresh
@@ -182,7 +189,9 @@ Begin Namespace DisplayRelations
             Endwith    
             
             This.BindingOrderDetails()
-            This.bsOrderDetails.ResetBindings(.f.)            
+            This.bsOrderDetails.ResetBindings(.f.)      
+            
+            Return
         End Method
         
         Private Method grdOrders_SelectionChanged(sender As System.Object, e As System.EventArgs) As Void Strict
@@ -200,6 +209,8 @@ Begin Namespace DisplayRelations
                 .Columns[3].DefaultCellStyle.BackColor = color.Blue
                 .Columns[4].DefaultCellStyle.BackColor = color.Blue
             Endwith
+            
+            Return
         End Method
     End Class 
 End Namespace
